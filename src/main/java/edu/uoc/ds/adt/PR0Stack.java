@@ -4,17 +4,19 @@ package edu.uoc.ds.adt;
 import edu.uoc.ds.adt.sequential.Stack;
 import edu.uoc.ds.adt.sequential.StackArrayImpl;
 
+import java.time.LocalDate;
+
 public class PR0Stack {
     public final int CAPACITY = 10;
 
-    private Stack<Character> stack;
+    private Stack<LocalDate> stack;
 
     public PR0Stack() {
         newStack();
     }
 
     public void newStack() {
-        stack = new StackArrayImpl<Character>(CAPACITY);
+        stack = new StackArrayImpl<LocalDate>(CAPACITY);
     }
 
 
@@ -25,11 +27,11 @@ public class PR0Stack {
         return sb.toString();
     }
 
-    public Stack<Character> getStack() {
+    public Stack<LocalDate> getStack() {
         return this.stack;
     }
 
-    public void push(Character c) {
-        this.stack.push(c);
+    public void push(LocalDate date) {
+        this.stack.push(date);
     }
 }

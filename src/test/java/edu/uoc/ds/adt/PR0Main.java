@@ -3,6 +3,8 @@ package edu.uoc.ds.adt;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 
+import java.time.LocalDate;
+
 public class PR0Main {
 
     public static void main(String[] args) {
@@ -13,5 +15,6 @@ public class PR0Main {
         System.out.println("# Number of failures: " + result.getFailureCount());
         System.out.println("# Rune time: " + result.getRunTime() + "ms");
         System.out.println("#############################");
+
     }
 }
